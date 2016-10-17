@@ -1,0 +1,28 @@
+{
+  "name": "Periodic-Table-",
+  "version": "1.0.0",
+  "description": "A web app that gives you access to a periodic table.",
+  "author": "David Bisrat",
+  "main": "app.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabisrat/Periodic-Table-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dabisrat/Periodic-Table-/issues"
+  },
+  "homepage": "https://github.com/dabisrat/Periodic-Table-#readme"
+}
