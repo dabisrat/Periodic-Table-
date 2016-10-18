@@ -9,7 +9,7 @@
   <body>
                    <h1>Periodic Table</h1>
 
-    <div id='tableContainer' ng-controller='elementsCTRL'>
+  <div id='tableContainer' ng-controller='elementsCTRL'>
     
     <!--           ROW 1               -->
       <div class='row'>
@@ -144,9 +144,15 @@
         </div>
       </div>
 
-    </div>
+    
+      <pre>
+        {{result}}
+      </pre>
+    
 
-    <div ng-view></div>
+  </div>
+
+    
 
     <script src="lib/angular/angular.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>

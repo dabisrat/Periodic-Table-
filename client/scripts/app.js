@@ -1,11 +1,16 @@
-var app = angular.module('app',[]);
+var app = angular.module('app',['ngRoute']);
 
 app.controller('elementsCTRL', function($scope, wikiLinks){
 
 $scope.get= function(ele){
   wikiLinks.getWikiElement(ele)
   .then(function(result){
-    console.log(result.data.query.pages)
+    
+    $scope.result = result.data.query.pages;
+    for(var key in $scope.result){
+      $scope.result = $scope.result[key].extract;
+      console.log(typeof $scope.result)
+    }
     
   })
   .catch(function(error){
@@ -597,3 +602,13 @@ $scope.row1 = [
 
     return getWikiElement;
 })
+  // .config(function($routeProvider){
+  //   $routeProvider
+  //   .when('/wikiView', {
+  //     templateUrl : '/views/wikiView.html',
+  //     controller: 'elementsCTRL'
+  //   })
+  //   .otherwise({
+  //     redirectTo: '/wikiView'
+  //   })
+  // })

@@ -3,7 +3,9 @@
 
 
 
-
+h1{
+  text-align:center;
+}
 
 .tableContainer {
   position: relative;
