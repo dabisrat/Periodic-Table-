@@ -1,8 +1,52 @@
-.element{
-  line-height: 12px;
-  border:2px solid black;
-  float: left;
+
+
+
+
+
+
+
+.tableContainer {
   position: relative;
-  width: 100px;
-  height: 100px;
+  height: 200px;
+  margin-right: -1px;
+}
+
+.row {
+
+  clear: both;
+    height: 10%;
+}
+
+.elementContainer {
+  float: left;
+  padding-bottom: 5px;
+  /*background-color: green;*/
+  position: relative;
+  width: 5.55%;
+  height: 100%;
+}
+
+.element{
+
+ position: relative;
+  top: 0;
+  left: 0;
+  bottom: 1px;
+  right: 1px;
+  box-sizing: border-box;
+  /*border: 1px solid black;*/
+  text-align: center; 
+}
+.extraInfo{
+  font-size: 12px;
+}
+
+.aNum{
+  
+  font-size: 18px;
+}
+
+#Lanthanoids, #Actinoids{
+  padding-top: 20px;
+  color: red;
 }

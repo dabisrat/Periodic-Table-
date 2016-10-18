@@ -7,23 +7,144 @@
     <title>Periodic Table</title>
   </head>
   <body>
-    <div ng-controller='elementsCTRL'>
-      <div ng-repeat= 'ele in elementData'>
-        <div class='element'>
-          {{ele.aNum}}
-          <br></br>
-          {{ele.symbol}}
-          <br></br>
-          {{ele.name}}
-          <br></br>
-          {{ele.aMass}}
+                   <h1>Periodic Table</h1>
+
+    <div id='tableContainer' ng-controller='elementsCTRL'>
+    
+    <!--           ROW 1               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row1'>
+          <div class='element' ng-click=get(ele.name)>
+            <div class='aNum '>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
         </div>
       </div>
+
+        <!--           ROW 2               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row2'>
+          <div class='element' ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
+        <!--           ROW 3               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row3'>
+          <div class='element' ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
+        <!--           ROW 4               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row4'>
+          <div class='element' ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
+        <!--           ROW 5               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row5'>
+          <div class='element' ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
+                        <!-- row6 -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row6'>
+          <div class='element'id={{ele.name}} ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
+        <!--           ROW 7               -->
+      <div class='row'>
+        <div class='elementContainer' ng-repeat='ele in row7'>
+          <div class='element'id={{ele.name}} ng-click=get(ele.name)>
+            <div class='aNum'>
+              {{ele.aNum}}
+            </div>
+            <div class="symbol">
+              {{ele.symbol}}
+            </div>
+            <div class='extraInfo'> 
+              {{ele.name}}
+              <br/>
+              {{ele.aMass}}
+            </div> 
+          </div>
+        </div>
+      </div>
+
     </div>
-
-
-
-    <h1>Periodic Table</h1>
 
     <div ng-view></div>
 
