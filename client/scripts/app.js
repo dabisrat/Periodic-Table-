@@ -1,4 +1,4 @@
-var app = angular.module('app',['ngRoute']);
+var app = angular.module('app', ['ngSanitize']);
 
 app.controller('elementsCTRL', function($scope, wikiLinks){
 
@@ -9,8 +9,8 @@ $scope.get= function(ele){
     $scope.result = result.data.query.pages;
     for(var key in $scope.result){
       $scope.result = $scope.result[key].extract;
-      console.log(typeof $scope.result)
     }
+    console.log($scope.result)
     
   })
   .catch(function(error){
