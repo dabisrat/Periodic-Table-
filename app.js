@@ -1,10 +1,14 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+//var path = require('path')
 var app = express();
+
+app.use(express.static(__dirname + '/client')) 
+
 
 var port = process.env.PORT || 8000;
 app.get("/", function(req, res){
-  res.send('This site is currently under maintenance, please come back later')
+  res.send('index')
 });
 
 app.listen(port);
