@@ -4,7 +4,7 @@ var app = express();
 
 var port = process.env.PORT || 8000;
 app.get("/", function(req, res){
-  res.send('index')
+  res.send('This site is currently under maintenance, please come back later')
 });
 
 app.listen(port);
