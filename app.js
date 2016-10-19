@@ -6,7 +6,7 @@ var app = express();
 app.use(express.static(__dirname + '/client')) 
 
 
-var port = process.env.PORT || 8000;
+var port = process.env.PORT || 1337;
 app.get("/", function(req, res){
   res.send('index')
 });

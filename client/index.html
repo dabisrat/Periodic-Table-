@@ -5,21 +5,23 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="css/css.css">
     <title>Periodic Table</title>
-   
-    
   </head>
   <body>
-                   <h1>Periodic Table</h1>
+  
+  
+    <h1>Periodic Table</h1>
 
-  <div id='tableContainer' ng-controller='elementsCTRL'>
+    <div id='tableContainer' ng-controller='elementsCTRL'>
+    <div id="main">
     
     <!--           ROW 1               -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row1'>
-          <div class='element' ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' ng-click=get(ele.name)>
             <div class='aNum '>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -34,11 +36,12 @@
 
         <!--           ROW 2               -->
       <div class='row'>
-        <div class='elementContainer' ng-repeat='ele in row2'>
-          <div class='element' ng-click=get(ele.name)>
+        <div class='elementContainer' ng-repeat='ele in row2' >
+          <div class='element {{ele.symbol}}'  ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -54,10 +57,11 @@
         <!--           ROW 3               -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row3'>
-          <div class='element' ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -73,10 +77,11 @@
         <!--           ROW 4               -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row4'>
-          <div class='element' ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -92,10 +97,11 @@
         <!--           ROW 5               -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row5'>
-          <div class='element' ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -111,10 +117,11 @@
                         <!-- row6 -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row6'>
-          <div class='element'id={{ele.name}} ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' id={{ele.name}} ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -130,10 +137,11 @@
         <!--           ROW 7               -->
       <div class='row'>
         <div class='elementContainer' ng-repeat='ele in row7'>
-          <div class='element'id={{ele.name}} ng-click=get(ele.name)>
+          <div class='element {{ele.symbol}}' id={{ele.name}} ng-click=get(ele.name)>
             <div class='aNum'>
               {{ele.aNum}}
             </div>
+            <br/>
             <div class="symbol">
               {{ele.symbol}}
             </div>
@@ -145,6 +153,7 @@
           </div>
         </div>
       </div>
+    </div>
 
     <div id= wikiContainer>  
       <div id="wikiPage" ng-bind-html="result">
@@ -152,7 +161,8 @@
     </div>
     
 
-  </div>
+  
+</div>
 
     
 

@@ -10,7 +10,6 @@ $scope.get= function(ele){
     for(var key in $scope.result){
       $scope.result = $scope.result[key].extract;
     }
-    console.log($scope.result)
     
   })
   .catch(function(error){
@@ -25,7 +24,7 @@ $scope.row1 = [
     symbol:'H',
     aMass: 1.008
   },
-   {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+   {symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},
   {
     aNum:2,
     name: 'Helium',
@@ -48,7 +47,7 @@ $scope.row1 = [
     aMass: 9.0121,
     },
 
-   {},{},{},{},{},{},{},{},{},{},
+   {symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},
    {
     aNum:5,
     name: 'Boron',
@@ -107,7 +106,7 @@ $scope.row1 = [
     aMass: 24.305
    },
 
-   {},{},{},{},{},{},{},{},{},{},
+   {symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},{symbol:'null'},
    {
     aNum:13,
     name: 'Aluminium',
@@ -363,7 +362,7 @@ $scope.row1 = [
     {
     aNum:54,
     name: 'Xenon',
-    symbol:'xe',
+    symbol:'Xe',
     aMass:131.293
     },
   ]
